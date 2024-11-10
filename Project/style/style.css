@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: "Arial", sans-serif;
 }
 
-/* Body Styling */
+
 body {
   background-color: #f8f9fa;
   display: flex;
@@ -15,7 +15,6 @@ body {
   padding: 20px;
 }
 
-/* Speaker Section */
 .speaker-section {
   text-align: center;
   background-color: #ffffff;
@@ -38,7 +37,6 @@ body {
   font-size: 16px;
 }
 
-/* Speaker Slider */
 .speaker-slider {
   display: flex;
   align-items: center;
@@ -54,7 +52,6 @@ body {
   padding: 16px;
 }
 
-/* Speaker Card */
 .speaker-card {
   background-color: #f5f5f5;
   border-radius: 8px;
@@ -96,7 +93,6 @@ body {
   color: #999;
 }
 
-/* Slider Buttons */
 .slider-btn {
   background-color: #007bff;
   border: none;
@@ -113,7 +109,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Popover Styling */
 .speaker-popover {
   display: none;
   position: fixed;
@@ -182,7 +177,6 @@ body {
   color: red;
 }
 
-/* CTA Button */
 .cta-button {
   margin-top: 40px;
   padding: 12px 24px;
@@ -199,7 +193,6 @@ body {
   background-color: #0e5ff7;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .speaker-popover {
       flex-direction: row;

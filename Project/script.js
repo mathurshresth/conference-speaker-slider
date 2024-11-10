@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Speaker Data
     const speakerData = [
         {
             name: 'John Doe',
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    // Popover Elements
     const speakerCards = document.querySelectorAll('.speaker-card');
     const popover = document.getElementById('popover');
     const popoverName = document.getElementById('popover-name');
@@ -56,15 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const popoverWebsite = document.getElementById('popover-website');
     const closeBtn = document.querySelector('.popover-close');
 
-    // Arrow Buttons
+    
     const leftButton = document.querySelector('.slider-btn.left');
     const rightButton = document.querySelector('.slider-btn.right');
     const sliderContainer = document.querySelector('.speaker-slider__container');
 
-    // Scroll Amount
-    const scrollAmount = 300; // Adjust this value if needed
+   
+    const scrollAmount = 300; 
 
-    // Functionality for Popover on Speaker Card Click
+    
     speakerCards.forEach((card, index) => {
         card.addEventListener('click', () => {
             const speaker = speakerData[index];
@@ -74,22 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
             popoverImg.src = speaker.image;
             popoverDesc.textContent = speaker.description;
 
-            // Populate social media links
+           
             popoverTwitter.href = speaker.twitter;
             popoverLinkedIn.href = speaker.linkedin;
             popoverWebsite.href = speaker.website;
 
-            // Show popover
+            
             popover.style.display = 'block';
         });
     });
 
-    // Close Popover
+ 
     closeBtn.addEventListener('click', () => {
         popover.style.display = 'none';
     });
 
-    // Scroll Right Function
     rightButton.addEventListener('click', () => {
         sliderContainer.scrollBy({
             left: scrollAmount,
@@ -97,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Left Function
     leftButton.addEventListener('click', () => {
         sliderContainer.scrollBy({
             left: -scrollAmount,
