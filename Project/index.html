@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    
+    <section class="speaker-section">
+        <h2>View our Featured Speakers for the Event</h2>
+        <p>Speakers are core contributors and industry thought leaders working at companies that push for innovation.</p>
+
+        <!-- Speaker Slider -->
+        <div class="speaker-slider">
+            <button class="slider-btn left">&lt;</button>
+            <div class="speaker-slider__container">
+                <div class="speaker-card" data-index="0">
+                    <img src="/Assets/speaker1.jpeg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Chief Marketing Officer</p>
+                    <span>Acme Corp</span>
+                </div>
+                <div class="speaker-card" data-index="1">
+                    <img src="/Assets/speaker2.jpeg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Engagement Officer</p>
+                    <span>Acquia</span>
+                </div>
+                <div class="speaker-card" data-index="2">
+                    <img src="/Assets/speaker3.jpeg" alt="Michael Brown">
+                    <h3>Michael Brown</h3>
+                    <p>Chief Technical Developer</p>
+                    <span>Pantheon</span>
+                </div>
+                <div class="speaker-card" data-index="3">
+                    <img src="/Assets/speaker4.jpeg" alt="Michael Brown">
+                    <h3>Michael Brown</h3>
+                    <p>Chief Marketing Officer</p>
+                    <span>Specbee</span>
+                </div>
+            </div>
+            <button class="slider-btn right">&gt;</button>
+        </div>
+
+        <!-- Popover for Speaker Details -->
+<div class="speaker-popover" id="popover">
+    <button class="popover-close">&times;</button>
+    <div class="popover-content">
+        <img id="popover-img" src="" alt="Speaker Image">
+        <div class="popover-text">
+            <h3 id="popover-name"></h3>
+            <p id="popover-title"></p>
+            <span id="popover-company"></span>
+            <p id="popover-description">Lorem ipsum dolor sit amet...</p>
+            <!-- Add social media links (optional) -->
+            <div class="popover-social">
+                <a href="#" id="popover-twitter" target="_blank">
+                    <img src="/Assets/drupal.png" alt="Website">
+                </a>
+                <a href="#" id="popover-linkedin" target="_blank">
+                    <img src="/Assets/twitter.png" alt="Twitter">
+                </a>
+                <a href="#" id="popover-website" target="_blank">
+                    <img src="/Assets/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- CTA Button -->
+        <button class="cta-button">See the Program</button>
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
